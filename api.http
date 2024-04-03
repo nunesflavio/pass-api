@@ -2,8 +2,26 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
-  "details": "Um evento para quem ama programação",
-  "maximumAttendees": 100
+  "title": "Evento para o teste",
+  "details": null,
+  "maximumAttendees": 1
 }
 
+
+###
+
+POST http://localhost:3333/events/342f9680-a435-4211-99c9-bc031bee38fe/attendees
+Content-Type: application/json
+
+{
+  "name": "Legionario",
+  "email": "nunespflavio@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/342f9680-a435-4211-99c9-bc031bee38fe
+
+###
+
+GET http://localhost:3333/attendees/2/badge
